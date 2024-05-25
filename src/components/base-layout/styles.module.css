@@ -1,0 +1,10 @@
+.siteWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.outlet {
+  /* margin: 0 2rem 0 2rem; */
+  background-color: #f5f5f5;
+}

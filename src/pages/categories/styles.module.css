@@ -1,0 +1,149 @@
+.menuContainer {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+}
+
+.categoryList {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    flex: 1;
+    gap: 0.5rem;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.categoryList,
+.productList {
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.categoryList::-webkit-scrollbar,
+.productList::-webkit-scrollbar {
+    width: 2px;
+    border: 1px solid #E00751;
+}
+
+.categoryList::-webkit-scrollbar-track,
+.productList::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background: #eeeeee;
+}
+
+.categoryList::-webkit-scrollbar-thumb,
+.productList::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #E00751;
+}
+
+.categoryList::-webkit-scrollbar,
+.productList::-webkit-scrollbar {
+    height: 4px;
+}
+
+.categoryCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.categoryCard:hover {
+    transform: scale(1.05);
+}
+
+.categoryImage {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.selectedCategory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding: 0 1rem;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.productsCatalog {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 4;
+    background-color: #f5f5f5;
+}
+
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 200px;
+    cursor: pointer;
+}
+
+.productImage {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.productActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.addBtn {
+    background-color: #E00751;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+
+.removeBtn {
+    background-color: #ffffff;
+    color: #E00751;
+    border: 1px solid #E00751;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.checkoutBtn {
+    background-color: #0A8A00;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.disabledBtn {
+    background-color: #e0e0e0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: not-allowed;
+}
